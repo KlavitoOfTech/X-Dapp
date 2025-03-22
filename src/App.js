@@ -2,8 +2,8 @@ import "./styles.css";
 import { useEffect, useState } from "react";
 import image from "./images/x-icon.png"
 
-// 1️⃣ Finish getProfile() function to check if user exists
-// 2️⃣ Complete createProfile() function in ProfileCreation.js to create profile for a new user
+// 1️⃣ Finish getProfile() function to check if user exists⚡
+// 2️⃣ Complete createProfile() function in ProfileCreation.js to create profile for a new user⚡
 // 3️⃣ Set the correct profileContractAddress and contractAddress in Connect.js
 
 import Tweets from "./components/Tweets";
@@ -47,11 +47,11 @@ export default function App() {
       );
       return;
     }
-
-    // get profile using getProfile() function from the contract
-    // return profile displayName
+    // Call the smart contract function to get the profile
+    const profile = await profileContract.methods.getProfile(account).call();
     // HINT: https://web3js.readthedocs.io/en/v1.2.11/web3-eth-contract.html#methods-mymethod-call
     setLoading(false);
+    return profile.displayName;
   }
 
   useEffect(() => {

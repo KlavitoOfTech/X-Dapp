@@ -13,7 +13,7 @@ body {
   
   #userAddress {
     text-transform: uppercase;
-    color: #1da1f2;
+    color: #ffffff;
   }
   
   .spinner {
@@ -21,7 +21,7 @@ body {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    border-left-color: #09f;
+    border-left-color: #ffffff;
     animation: spin 1s linear infinite;
   }
   
@@ -67,9 +67,11 @@ body {
   textarea {
     width: calc(100% - 20px);
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #7e7b7b;
     border-radius: 5px;
     resize: none;
+    background-color: #000000;
+    color: #ffffff;
   }
   
   #connectMessage {
@@ -80,7 +82,7 @@ body {
   }
   
   button[type="submit"] {
-    background-color: #1da1f2;
+    background-color: #000000;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -98,7 +100,7 @@ body {
   
   .author {
     font-weight: bold;
-    color: #1da1f2;
+    color: #ffffff;
   }
   
   .like-button {
@@ -136,7 +138,8 @@ body {
   .like-button .likes-count {
     margin-left: 5px;
   }
-  
+
+  /* User Profile Image */
   .user-icon {
     width: 50px;
     height: 50px;
@@ -153,6 +156,7 @@ body {
   .author,
   .content {
     flex-grow: 1;
+    color: #ffffff;
   }
   
   .tweet-inner {
@@ -172,21 +176,23 @@ body {
   }
   
   .create-profile-form h2 {
-    color: #1da1f2;
+    color: #ffffff;
     margin-bottom: 20px;
   }
   
   .create-profile-form label {
-    color: #65676b;
+    color: #ffffff;
     margin-bottom: 5px;
   }
   
   .profile-input {
     width: calc(100% - 20px);
     padding: 10px;
-    border: 1px solid #ccc;
+    border: none;
+    color: #ffffff;
     border-radius: 5px;
     margin-bottom: 10px;
+    background-color: hsl(0, 0%, 0%);
   }
   
   .profile-submit {
@@ -197,5 +203,10 @@ body {
     border-radius: 20px;
     cursor: pointer;
     margin-top: 10px;
+  }
+
+  .profile-input::placeholder {
+    font-style: italic;
+    color: #535353;
   }
   

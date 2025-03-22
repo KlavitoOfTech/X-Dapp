@@ -5,11 +5,12 @@ const Tweets = ({ tweets, shortAddress }) => {
           <div key={index} className="tweet">
             <img
               className="user-icon"
-              src={`https://avatars.dicebear.com/api/human/${tweet.author}.svg`}
+              //⚡ check the profile image
+              src={`https://avatars.dicebear.com/api/human/${tweet.author}.svg`} 
               alt="User Icon"
             />
             <div className="tweet-inner">
-              <div className="author">{shortAddress(tweet.author)}</div>
+              <div className="author">{shortAddress(tweet.author)}</div> 
               <div className="content">{tweet.content}</div>
             </div>
           </div>

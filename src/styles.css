@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f8fa;
+    background-color: #000000;
     color: #14171a;
     padding: 20px;
   }
@@ -34,19 +34,20 @@ body {
   .container {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #252525;
     padding: 20px;
     border-radius: 10px;
   }
   
   h1 {
-    color: #1da1f2;
+    color: #ffffff;
     text-align: center;
     margin-bottom: 20px;
+    font-size: 36px;
   }
   
   #connectWalletBtn {
-    background-color: #1da1f2;
+    background-color: #000000;
     color: #fff;
     border: none;
     padding: 10px 20px;

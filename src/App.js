@@ -1,5 +1,6 @@
 import "./styles.css";
 import { useEffect, useState } from "react";
+import image from "./images/x-icon.png"
 
 // 1️⃣ Finish getProfile() function to check if user exists
 // 2️⃣ Complete createProfile() function in ProfileCreation.js to create profile for a new user
@@ -73,7 +74,7 @@ export default function App() {
 
   return (
     <div className="container">
-      <h1>Twitter DAPP</h1>
+      <h1 display= "flex" align-items = "center"><span><img src={image} alt="Logo" width="30"></img></span> DAPP</h1>
       <Connect
         web3={web3}
         setWeb3={setWeb3}

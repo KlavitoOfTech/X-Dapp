@@ -1,6 +1,6 @@
 import "./styles.css";
 import { useEffect, useState } from "react";
-import image from "./images/x-icon.png"
+import image from "./images/x-icon.png";
 
 // 1️⃣ Finish getProfile() function to check if user exists⚡
 // 2️⃣ Complete createProfile() function in ProfileCreation.js to create profile for a new user⚡
@@ -91,7 +91,13 @@ export default function App() {
             account={account}
             getTweets={getTweets}
           />
-          <Tweets tweets={tweets} shortAddress={shortAddress} />
+          <Tweets
+            tweets={tweets} 
+            shortAddress={shortAddress}
+            contract={contract}    // Make sure contract is passed to Tweets
+            account={account}      // Make sure account is passed to Tweets
+            getTweets={getTweets}  // Pass getTweets for refreshing the tweets
+          />
         </>
       ) : (
         account &&
